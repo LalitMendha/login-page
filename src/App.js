@@ -7,7 +7,6 @@ function Login(){
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [show, setShow] = useState({visible: "hidden", color: "green", text:""});
-  const [showPassword, setShowPassword] = useState("password");
 
   function onInputChange(oEvent){
     setShow({...show, visible: "hidden", color: "red", text:""});
