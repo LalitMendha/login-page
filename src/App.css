@@ -2,37 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  font-size: CLAMP(1vw, 3vw, 4vw);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container{
+  margin: auto;
+  padding: 1rem;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.form{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 1rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+label{
+  justify-self: end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnShow{
+  padding: 0px;
+}
+
+input[type = "password"]:placeholder-shown{
+  border: 1px solid red;
+}
+
+/* input[type = "password"]:not(:placeholder-shown){
+  border: 1px solid green;
+} */
+
+input:focus{
+  border: 3px solid yellowgreen;
+}
+
+.btn-submit{
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 700px){
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
 }
