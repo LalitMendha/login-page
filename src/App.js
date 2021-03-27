@@ -42,11 +42,11 @@ function Login(){
 
           <label for="password">Password: </label>
           <input onChange={onPasswordChange} className="password" value={password} id="password" 
-            type={showPassword} placeholder="Password"/> 
+            type="password" placeholder="Password"/> 
 
           <label for="confirm-password">Confirm Password: </label>
           <input onChange={onConfirmPasswordChange} className="password" value={confirmPassword} id="confirm-password" 
-            type={showPassword} placeholder="Confirm Password" />
+            type="password" placeholder="Confirm Password" />
       </div>
       <button onClick={onsubmit} className="btn-submit">Submit</button>
       <p style={{visibility: show.visible, color: show.color}}> {show.text} </p>
